@@ -1,4 +1,4 @@
-# Face-Detector-1MB-with-landmark
+# Face-Detector-1MB-with-landmark-TWJ
 ## 实现功能
  - Retinaface-mobile0.25的训练/测试/评估/ncnn C++推理
  - Face-Detector-1MB slim和RFB版本的训练/测试/评估/ncnn C++推理
