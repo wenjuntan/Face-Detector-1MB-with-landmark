@@ -119,7 +119,7 @@ if __name__ == '__main__':
         im_size_max = np.max(im_shape[0:2])
         resize = float(target_size) / float(im_size_min)
         # prevent bigger axis from being more than max_size:
-        if np.round(resize * im_size_max) > max_size:
+        if np.round(resize * im_size_max) > float(max_size):
             resize = float(max_size) / float(im_size_max)
         if args.origin_size:
             resize = 1
