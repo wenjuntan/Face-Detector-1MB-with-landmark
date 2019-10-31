@@ -43,7 +43,8 @@ version-slim(our)|0.850     |0.808       |0.595
 version-RFB(our)|0.865    |0.828       |0.622
 Retinaface-Mobilenet-0.25(our)  |**0.873**|**0.836**|**0.638**
 
-ps: 测试的时候,长边为320 或者 640 ,图像等比例缩放.
+ps: 测试的时候,长边为320 或者640,图像等比例缩放.
+
 
 ## Parameter and flop
 
@@ -110,6 +111,7 @@ If you don't want to train, we also provide a trained model on ./weights
 ### Evaluation widerface val
 1. Generate txt file
 ```Shell
+sh test_widerface.sh
 python test_widerface.py --trained_model weight_file --network mobile0.25 or slim or RFB
 ```
 2. Evaluate txt results. Demo come from [Here](https://github.com/wondervictor/WiderFace-Evaluation)
@@ -119,6 +121,8 @@ python setup.py build_ext --inplace
 python evaluation.py
 ```
 3. You can also use widerface official Matlab evaluate demo in [Here](http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/WiderFace_Results.html)
+
+4. You can also use widerface official Matlab evaluate demo in [Here](https://github.com/wenjuntan)
 
 ## C++_inference _ncnn
 1. Generate onnx file
